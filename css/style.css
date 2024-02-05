@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	background-color: rgb(5,5,5);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	color:white;
+}
+
+button {
+	background-color: silver;
+	border: none;
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+a:hover {
+    color: white;
+}
+
+.wrapper {
+	margin: 0 5%;
+}
+
+/* Header */
+
+.wrapper-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: 1px solid silver;
+}
+
+.wrapper-header .about__me {
+	display: flex;
+	align-items: center;
+}
+
+.wrapper-header .about__me h1 {
+	font-size: 2.5em;
+	font-weight: 800;
+	letter-spacing: 0.5em;
+}
+
+.wrapper-header .about__me img {
+	width: 2em;
+	height: 2em;
+
+	filter: grayscale(100%);
+}
+
+.wrapper-header .links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.wrapper-header .email {
+	font-weight: 600;
+	color: silver;
+
+	transition: 0.2s;
+}
+
+.wrapper-header .email:hover {
+	color: white;
+	cursor: pointer;
+}
+
+/* Section welcome */
+
+.wrapper-welcome {
+    padding: 5em 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper-welcome img {
+	width: 30em;
+
+    padding-top: 2em;
+}
+
+.wrapper-welcome .info {
+	padding-top: 3em;
+
+	max-width: 45em;
+	text-align: center;
+}
+
+.wrapper-welcome h2 {
+	letter-spacing: 0.2em;
+}
+
+.wrapper-welcome .info p {
+	padding-top: 1em;
+
+	font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+
+/* Section works */
+
+.wrapper-works {
+	padding: 5em 0;
+}
+
+.wrapper-works .cards {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cards .card:nth-child(2) {
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+}
+
+.card {
+	width: 40%;
+
+	padding: 0 5%;
+}
+
+.card h3 {
+	letter-spacing: 0.2em;
+}
+
+.card__features {
+	padding-top: 1em;
+}
+
+.card__features li {
+	padding: 0.3em 0;
+	list-style-type: "- ";
+	list-style-position: inside;
+}
+
+.card__features li:last-child {
+	list-style-type: None;
+
+	color: silver;
+}
